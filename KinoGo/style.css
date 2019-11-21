@@ -1,0 +1,410 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/IronMan3.jpg) 50% 0 no-repeat #000;
+}
+/* *{
+    border: 1px solid red;
+} */
+.wrapper{
+    margin: auto;
+    width: 70vw;
+    width: 976px;
+    position: relative;
+    padding-top: 440px;
+    padding-bottom: 7px;
+    font-size: 13px;
+    height: 4450px;
+}
+
+    /* HEADER STYLES */
+header{
+    overflow: auto;
+    background: black;
+    height: 35px;
+}
+header div{
+    width: 72%;
+    margin: auto;
+}
+header div img{
+    position: relative;
+    top: 8px;
+    float: left;
+}
+header > .headerMenu{
+    float: right;
+}
+header div a{
+    color: #b6b6b6;
+    font-size: 14px;
+    margin-left: 3px;
+}
+header span{
+    color: white;
+}
+.headerSearch{
+    color: #b6b6b6;
+    background: #505050;
+    border: none;
+    vertical-align: middle;
+    border: 2px solid #686767;
+    margin-left: 3px;
+}
+.headerMenu{
+    margin-top: 5px;
+    width: 358px;
+    float: right;
+}
+.headerButton{
+    position: relative;
+    color: #b6b6b6;
+    background: #242424;
+    border: 1px solid #404040;
+    height: 22px;
+    padding: 0px 7px 0px 7px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+    /* MAIN STYLES */
+.chooseButton a{
+    position: relative;
+    bottom: 225px;
+    left: 518px;
+    width: 320px;
+    padding: 0px 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: -4px;
+    height: 30px;
+    background: rgb(63, 63, 63);
+    color: #a8a8a8;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-decoration: none;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-family: Tahoma, verdana, sans-serif;
+}
+.chooseButton a:hover{
+    color: #a8a8a8;
+    background: rgb(29, 29, 29);
+}
+.chooseFilm{
+    position: relative;
+    bottom: 220px;
+    margin: 0 auto;
+    height: 200px;
+    background-color: #585858;
+    border-radius: 10px 0px 10px 10px;
+    overflow: auto;
+    border: 1px solid #848480;
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+.filmContainer{
+    height: 199px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.portFilm{
+    height: 177px;
+    width: 970px;
+}
+.filmContainer ul li{
+    width: 124px;
+    height: 183px;
+    display: block;
+    float: left;
+    margin-right: 4px;
+    margin-left: 6px;
+    position: relative;
+}
+.portFilm li a img{
+    width: 118px;
+    min-height: 171px;
+    height: 174px;
+    border: 3px solid rgb(136, 136, 136);
+    opacity: 0.8;
+}
+.portFilm li a img:hover{
+    opacity: 1;
+    border: 3px solid rgb(173, 173, 173);
+}
+    /* <!--___________ LEFT COLUMN______________ --> */
+    main{
+        position: relative;
+        bottom: 200px;
+    }
+.container{
+    background-color: #585858;
+    border-radius: 10px;
+    overflow: auto;
+    border: 1px solid rgb(14, 14, 14);
+    font-family: Tahoma, verdana, sans-serif;
+}
+#leftColumn{
+    float: left;
+    width: 35%;
+    color: white;
+    background-color: #585858;
+}
+#rightColumn{
+    width: 65%;
+    float: right;
+    background: white;
+}
+.panelOfNavigation{
+    padding: 7px 20px;
+    position: relative;
+    border-bottom: 1px solid #3f413f;
+}
+.wordStyle{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(243, 243, 243);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.leftColumnBlock1{
+    float: left;
+}
+.leftColumnBlock2{
+    position: relative;
+    right: 70px;
+    float: right;
+}
+ul{
+    list-style-type: none;
+    margin-left: -20px;
+}
+a{
+    color: #e0dfdc;
+}
+a:hover{
+    color: #DD4B39;
+}
+.part2{
+    border-bottom: 1px solid #848480;
+    border-top: 1px solid #848480;
+}
+
+.serialNews{
+    padding: 7px 20px;
+    border-top: 1px solid #3f413f;
+}
+
+.recomendedFilm{
+    border-top: 1px solid #848480;
+    overflow: auto;
+    padding: 0px;
+    margin-bottom: -5px;
+}
+    /* RECOMEND FILM */
+.recomendLi{
+    position: relative;
+    float: left;
+    display: block;
+    width: 135px;
+    padding: 0px 20px 0 0px;
+    height: 255px;
+    opacity: 0.8;
+    color: white;
+    text-decoration: underline;
+}
+.recomendLi img:hover {
+    border: 1px solid #8B8B8B;
+    opacity: 1;
+}
+.recomendLi img{
+    border: 1px solid #464646;
+    width: 133px;
+    opacity: 0.8;
+}
+.filmDesc{
+    text-align: center;
+}
+.liInfo{
+    float: right;
+    position: absolute;
+    right: 21px;
+    top: 180px;
+    z-index: 2;
+    font-size: 11px;
+}
+.liBlock{
+    float: left;
+    width: 0;
+    height: 0;
+    border-width: 9px;
+    border-style: solid;
+    border-color: #492557 #492557 #492557 rgba(79, 24, 100, 0);
+    position: relative;
+}
+.liContainer{
+    background: #492557;
+    float: left;
+    color: #fff;
+    padding-top: 1px;
+    height: 17px;
+    padding-right: 7px;
+}
+
+        /* COMMENTS */
+
+.comment{
+    width: 90%;
+    border-bottom: 1px solid #848480;
+    margin: 10px 0px 0px 20px;
+    padding-bottom: 10px;
+}
+.biigerA{
+    font-weight: 700;
+    text-decoration: none;
+}
+.commentCapital{
+    font-size: 15px;
+    padding: 7px 20px;
+    position: relative;
+    border-bottom: 1px solid #3f413f;
+    border-top: 1px solid #3f413f;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(243, 243, 243);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+/* <!--___________ RIGHT COLUMN______________ --> */
+.content{
+    width: 93.6%;
+    border-top: 1px solid #404040;
+    padding: 5px 20px 10px 20px;
+    background: #2b2b2b;
+    color: #fff;
+    border-left: 1px solid #404040;
+    height: 380px;
+}
+
+label:after{
+    content: '\2606';
+    color:gold;
+    font-size: 20px;
+    cursor: pointer;
+}
+input:checked ~ label::after,
+input:hover~label:after{
+    content: '\2605';
+}
+.stars{
+    position: relative;
+    top: -5px;
+    right: 10px;
+    direction: rtl;
+    float: right;
+}
+.stars input{
+    display: none;
+}
+.capitalStyle{
+    display: block;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(243, 243, 243);
+    float: left;
+}
+.capital{
+    margin: 10px;
+}
+.capitalStyle a:hover{
+    color: #DD4B39;
+}
+.equip{
+    overflow: auto;
+    width: 331px;
+    display: block;
+    border-top: 1px solid #848480;
+    padding-bottom: 5px;
+}
+        /* ___________ RIGHT COLUMN______________  MOVIE INFO */
+.photoprewiew{
+    display: inline-block;
+}
+.filmDescription{
+    display: inline-block;
+    width: 372px;
+    vertical-align: top;
+    color: #a8a8a8;
+    margin-left: 10px;
+}
+.imgAndDescription{
+    margin-top: 40px;
+}
+.descriptionFooter{
+    position: relative;
+    border-left: 1px solid #404040;
+    margin-top: 10px;
+}
+.descriptionFooter a{
+    border: 1px solid  #848480;
+    text-decoration: none;
+    padding: 3px;
+    float: left;
+}
+.descriptionFooter span{
+    float: right;
+}
+.photosize{
+    width: 200px;
+    height: 300px;
+}
+    /* FOOTER */
+footer{
+    position: relative;
+    bottom: 200px;
+    padding: 15px 0 5px 0;
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(104, 104, 104);
+    font-family: Tahoma, verdana, sans-serif;
+}
+strong{
+    color: #a8a8a8;
+}
+footer img{
+    opacity: 0.7;
+    float: left;
+    margin: 8px 20px 8px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+footer a{
+    color: #a8a8a8;
+}
+.copyRight{
+    width: 320px;
+    position: relative;
+    bottom: 200px;
+}
+.copyRight a{
+    position: relative;
+    bottom: 15px;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.imgAndDescription img{
+    opacity: 1;
+}
+.imgAndDescription img:hover{
+    opacity: 0.8;
+}
