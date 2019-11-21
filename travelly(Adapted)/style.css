@@ -1,0 +1,532 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e7ebf0;
+}
+/* *{
+    outline: 1px solid red;
+} */
+
+.measure{
+    display: flex;
+    flex-flow: column;
+    max-width: 1366px;
+    margin: auto;
+}
+
+    /* PAGE 1 STYLES */
+.page1{
+    height: 768px;
+    background: url(img/headerBg.png) no-repeat;
+    background-size: 100%;
+}
+.page1 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    margin: auto;
+}
+.page1 header .logo{
+    height: fit-content;
+}
+.page1 header .logo span{
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #f4f3ee;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;  
+}
+.page1 header .burger{
+    height: fit-content;
+    flex-flow: column wrap;
+    width: 25px;
+}
+.page1 header .burger img:nth-child(2){
+    display: block;
+}
+.page1 header .burger img:nth-child(3){
+    display: block;
+    margin-top: 4px;
+}
+.page1 main{
+    text-align: center;
+    width: 60%;
+    margin: 190px auto;
+}
+.page1 main input:nth-child(2){
+    height: 40px;
+    width: 45%;
+}
+.page1 main input:nth-child(2)::placeholder{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #8b8b8b;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.page1 main h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;
+}
+.page1 main a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 14px 55px;
+    background-color: #fd4f32;
+    margin-left: -5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+}
+.page1 main a:hover{
+    background-color: #cc432b;
+}
+
+    /* PAGE 2 STYLES */
+.page2{
+    height: 525px;
+    background-color: #eeeeee;
+}
+.page2 header{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 120px;
+    width: 80%;
+    margin: auto;
+}
+.page2 header h1{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 0;
+}
+.page2 header p{
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #8b8b8b;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.page2 main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.page2 main .country1{
+    height: 318px;
+    width: 240px;
+    background-color: #ffffff;
+    box-shadow: 0.4em 0.4em 15px rgba(122,122,122,0.5);
+}
+.page2 main .country1 img{
+    height: 200px;
+    width: 240px;
+}
+.page2 main .country1 h1{
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-left: 20px;
+}
+.page2 main .country1 p{
+    font-size: 13px;
+    line-height: 19px;
+    color: #696969;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+    /* PAGE 3 STYLES */
+.page3{
+    height: 540px;
+    background-color: #ffffff;
+}
+.page3 header{
+    width: 80%;
+    margin: auto;
+    height: 80px;
+}
+.page3 header h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+    color: #323232;
+    font-family: "Open Sans";
+    font-weight: 300;
+    margin-top: 65px;
+}
+.page3 main{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.page3 main h1{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.page3 main p{
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #8b8b8b;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.page3 footer{
+    text-align: center;
+    margin-top: 100px;
+}
+.page3 footer h1{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.page3 footer input{
+    height: 35px;
+    width: 25%;
+    background-color: #eeeeee;
+}
+.page3 footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 11px 55px;
+    background-color: #fd4f32;
+    margin-left: -5px;
+}
+.page3 footer a:hover{
+    background-color: #e7462a;
+}
+.foot{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.foot div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 335px;
+}
+.foot div a{
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #323232;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+}
+.foot p{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #8b8b8b;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.foot div a:hover{
+    color: #fd4f32;
+}
+
+    /* 1024 */
+@media(max-width: 1024px){
+.page1{
+    height: 690px;
+}
+.page1 header .logo span{
+    font-size: 22px;
+} 
+.page1 main input:nth-child(2){
+    height: 35px;
+    width: 45%;
+}
+.page1 main input:nth-child(2)::placeholder{
+    font-size: 13px;
+}
+.page1 main h1{
+    font-size: 42px;
+}
+.page1 main a{
+    padding: 12px 45px;
+    font-size: 13px;
+}
+.page2 main .country1{
+    height: 268px;
+    width: 190px;
+}
+.page2 main .country1 img{
+    height: 150px;
+    width: 190px;
+}
+.page2 main .country1 h1{
+    font-size: 10px;
+    letter-spacing: 0px;
+}
+.page2 main .country1 p{
+    font-size: 13px;
+}
+.page3 header h1{
+    font-size: 37px;
+}
+.page3 footer h1{
+    font-size: 13px;
+}
+.page3 footer input{
+    height: 35px;
+    width: 20%;
+}
+.page3 footer a{
+    padding: 13px 25px;
+    font-size: 13px;
+}
+.foot p{
+    font-size: 11px;
+}
+.foot div a{
+    font-size: 11px;
+}
+.foot div{
+    width: 270px;
+}
+}
+
+    /* Tablet 768px */
+@media(max-width: 768px){
+.page1{
+    height: 510px;
+    background: url(img/headerBg.png) no-repeat;
+    background-size: 100%;
+}
+.page1 header .logo span{
+    font-size: 15px;
+} 
+.page1 header .logo img{
+    width: 15px;
+}
+.page1 header .burger img{
+    width: 15px;
+}
+.page1 main input:nth-child(2){
+    height: 29px;
+    width: 45%;
+}
+.page1 main input:nth-child(2)::placeholder{
+    font-size: 13px;
+}
+.page1 main h1{
+    font-size: 32px;
+    margin-top: -60px;
+}
+.page1 main a{
+    padding: 9px 35px;
+    font-size: 13px;
+}
+.page2{
+    height: 850px;
+}
+.page2 main{
+    display: flex;
+    flex-flow: wrap;
+}
+.page2 main .country1{
+    height: 308px;
+    width: 230px;
+}
+.page2 main .country1:nth-child(3),
+.page2 main .country1:nth-child(4){
+    margin-top: 35px;
+}
+
+.page2 main .country1 img{
+    height: 190px;
+    width: 230px;
+}
+.page2 main .country1 h1{
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+.page2 main .country1 p{
+    font-size: 15px;
+}
+.page3 header h1{
+    font-size: 27px;
+}
+.page3 main .info h1{
+    font-size: 12px;
+}
+.page3 main .info p{
+    font-size: 12px;
+}
+.page3 footer h1{
+    font-size: 12px;
+}
+.page3 footer input{
+    height: 25px;
+    width: 20%;
+}
+.page3 footer a{
+    padding: 10px 25px;
+    font-size: 11px;
+}
+.foot p{
+    font-size: 10px;
+}
+.foot div a{
+    font-size: 10px;
+}
+.foot div{
+    width: 240px;
+}
+}
+@media(max-width: 320px){
+.page1{
+    height: 510px;
+    background: url(img/headerBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page1 header .logo span{
+    font-size: 15px;
+} 
+.page1 header .logo img{
+    width: 15px;
+}
+.page1 header .burger img{
+    width: 15px;
+}
+.page1 main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.page1 main input:nth-child(2){
+    height: 29px;
+    width: 90%;
+}
+.page1 main input:nth-child(2)::placeholder{
+    font-size: 13px;
+}
+.page1 main h1{
+    font-size: 32px;
+    margin-top: -60px;
+}
+.page1 main a{
+    padding: 9px 80px;
+    font-size: 10px;
+    margin: 10px auto;
+}
+.page2{
+    height: 1500px;
+}
+.page2 header{
+    text-align: center;
+}
+.page2 main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: fit-content;
+}
+.page2 main div:nth-child(1){
+  margin-bottom: 30px;
+}
+.page2 main .country1{
+    height: 308px;
+    width: 230px;
+}
+.page2 main .country1:nth-child(3),
+.page2 main .country1:nth-child(4){
+    margin-top: 35px;
+}
+
+.page2 main .country1 img{
+    height: 190px;
+    width: 230px;
+}
+.page2 main .country1 h1{
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+.page2 main .country1 p{
+    font-size: 15px;
+}
+.page3{
+    height: 800px;
+}
+.page3 header h1{
+    font-size: 27px;
+}
+.page3 main .info h1{
+    text-align: center;
+}
+.page3 main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.page3 main .info h1{
+    font-size: 12px;
+}
+.page3 main .info p{
+    font-size: 12px;
+}
+.page3 footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.page3 footer h1{
+    font-size: 12px;
+}
+.page3 footer input{
+    height: 25px;
+    width: 50%;
+}
+.page3 footer a{
+    padding: 10px 52px;
+    font-size: 11px;
+    margin: 10px auto;
+}
+.foot{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.foot p{
+    font-size: 10px;
+    text-align: center;
+}
+.foot div a{
+    font-size: 10px;
+}
+.foot div{
+    width: 240px;
+}
+}
