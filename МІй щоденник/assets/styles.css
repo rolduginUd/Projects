@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    padding-top: 15px;
+    color: #6b2562;
+    background: url(../img/back.jpg);
+    background-size: cover;
+    font-family: 'Wallpoet', cursive;
+}
+*{
+    /* outline: 1px solid black; */
+}
+header{
+    width: 45%;
+    margin: auto;
+    height: fit-content;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow:1px 6px 14px 1px rgba(107,37,98,1);
+    -webkit-box-shadow:1px 6px 14px 1px rgba(107,37,98,1);
+    -moz-box-shadow:1px 6px 14px 1px rgba(107,37,98,1);
+}
+
+.firstActionContainer{
+    display: flex;
+    align-self: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.firstActionContainer input{
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.firstActionContainer input:focus{
+    outline: none;
+}
+#theme {
+    width: 20%;
+    margin-right: 3px;
+    border: 1px solid white;
+}
+#root div div:nth-child(1) {
+    margin: 0;
+    text-align: center;
+}
+input {
+    border-radius: 10px;
+}
+.material-icons {
+    box-shadow: 0 5px #6b2562;
+    
+    transition: all .0.5s linear;
+}
+.material-icons:active {
+    box-shadow: 0 2px 0 #6b2562;
+    transform: translateY(3px);
+}
+
+hr{
+    background-color: #6b2562;
+    height: 5px;
+    border: none;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    transition: all 0.4s;
+}
+.currentDate {
+    height: 100%;
+    margin: 0;
+}
+.firstActionContainer i{
+    display: flex;
+    align-items: center;
+    color: #c8d0d8;
+    margin: 0 15px 0 3px;
+}
+a{
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+}
+/* .firstActionContainer i:hover{
+    color: #41b5fe;
+}
+.firstActionContainer i:active{
+    color: #1f5b81;
+} */
+#root{
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+}
+#root div:not(.dateContainer){
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #fbfdff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.itemsLabel {
+    display: block;
+    text-align: left;
+}
+.error_search,
+.error_text,
+.error_theme{
+    color: red;
+    display: none;
+}
+i:hover{
+    cursor: pointer;
+}
+.removeIcn{
+    margin-left: 10px
+}
+.itemsLabel{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: auto;
+}
+.checkBox{
+    padding: 35px;
+}
+#itemId{
+    padding: 8px 15px;
+    width: 70%;
+}
+.test{
+    height: 10px;
+}
+.added_ico_checkbox {
+    cursor: pointer;
+    color: #c8d0d8;
+    font-size: 30px;
+}
+.dateContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: fit-content;
+    letter-spacing: 3px;
+    width: 110px;
+    font-family: 'Baskervville', serif;
+}
+.dateContainer > div {
+    text-align: center;
+}
+/* select {
+	-webkit-appearance : none;
+	background-image   : url(../img/down-curved-arrow.png);
+	background-position: right center;
+    background-repeat  : no-repeat;
+    background-size: 30px;
+} */
+
+.select {
+    display: block;
+    width: 30%;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.new-select {
+    border: 1px solid white;
+    padding: 9px 15px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+
+.new-select__list {
+    border: 1px solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 98.5%;
+    border-radius: 5px;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+    color: white;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    background: url(../img/down-curved-arrow.png) no-repeat right center / cover;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+#search {
+    width: 100px;
+    padding: 0;
+}
+#exit {
+    position: absolute;
+    right: 30px;
+    text-decoration: underline;
+}
