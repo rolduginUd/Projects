@@ -267,7 +267,7 @@ function newNoteCreator() {
             
             let newSelect = document.querySelector('.new-select');
 
-            newSelect.textContent = 'Тема';
+            newSelect.textContent = 'Theme';
             themeInput.selectedIndex = -1;
         });
         mainInput.value = '';
