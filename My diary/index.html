@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My diary</title>
+    <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="bg"></div>
+    
+    <a href="#" id="exit"></a>
+    <header>
+        <h1>Diary</h1>
+
+        <p class="error_search">No notes found for this topic</p>
+        <p class="error_text">Add text to note</p>
+        <p class="error_theme">Choose a theme</p>
+        <p class="error_date">Enter the date in the format dd.mm.yyyy</p>
+        
+                                                
+        <div class="firstActionContainer">
+            <select id="theme" class="select" required >
+                <option disabled value="Тема">Theme</option>
+                <option value="Education">Education</option>
+                <option value="Job">Job</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <input type="text" class="addAction" placeholder="Add a new note">
+            <a href="#" class="button"><i class="material-icons addIcon">add_box</i></a>
+
+            <div>
+                <input type="button" id="search" value="Search by theme">
+                <input type="button" id="dateSearch" value="Search by date">
+            </div>
+        </div>
+        <hr id="hr">
+
+        <div id="root"></div> 
+    </header>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>
