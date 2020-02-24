@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majex test task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sidebar/0.2.2/css/sidebar.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sclick.css">
+</head>
+<body>  
+    <!-- Modal window -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                Уведомление 1
+            </div>
+            <div class="modal-body">
+                Уведомление 2
+            </div>
+            <div class="modal-body">
+                Уведомление 3
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal Window -->
+    <div class="container border bg-light d-flex p-0">
+        <div class="collapse backColor align-items-center flex-column" id="navBar"> 
+                <a href="#"><img class="mt-2" src="img/Снимок_экрана_2020-02-13_в_19.19.34.png" alt="" width="36" height="22"></a>
+                <hr class="w-100 bg-light">
+                <div class="col-7 d-flex flex-column align-items-center">
+                    <a href="#"><img src="img/calendar.png" alt="" width="40" height="40"></a>
+                    <span class="text-white d-none">Шахматка</span>
+                    <a href="#"><img class="mt-4" src="img/file.png" alt="" width="25" height="25"></a>
+                    <span class="text-white d-none">Отчеты</span>
+                    <a href="#"><img class="mt-4" src="img/calculator.png" alt="" width="25" height="25"></a>
+                    <span class="text-white d-none">Касса</span>
+                    <a href="#"><img class="mt-4" src="img/person.png" alt="" width="25" height="25"></a>
+                    <span class="text-white d-none">Клиент</span>
+                    <a href="#"><img class="mt-4" src="img/peoples.png" alt="" width="25" height="25"></a>
+                    <span class="text-white d-none">Персонал</span>
+                    <a href="#"><img class="mt-4" src="img/baggage.png" alt="" width="25" height="25"></a>
+                    <span class="text-white d-none">Задачи</span>
+                    <a href="#"><img class="mt-4" src="img/warehouse.png" alt="" width="25" height="25"></a>
+                    <span class="text-white d-none">Склад</span>
+                </div>
+                <hr class="w-100 bg-light mb-0">
+                <div class="row d-flex justify-content-center h-50">
+                    <div class="col-2 d-flex flex-column align-items-center justify-content-around" id="wideNavChange">
+                        <a href="#"><img src="img/архив.png" alt="" width="17" height="17"></a>
+                        <a href="#"><img class="mrlOnMenu" src="img/wrench.png" alt="" width="17" height="17"></a>
+                        <a href="#"><img class="mrlOnMenu" src="img/помощ.png" alt="" width="20" height="20"></a>
+                    </div> 
+                </div>
+          </div>
+        <div class="col-12" id="changeCol">
+            <header>
+                <div class="row d-flex justify-content-between align-items-center justify-content-between">
+                    <div class="col-8 d-flex flex-nowrap align-items-center"> 
+                        <a href="#" id="navTrigger"><img src="img/burger.png" alt="burger" width="35" height="35"></a>
+                        <a href="#" id="wideNavTrigger" class="ml-1 mr-1"><img src="img/arrowForReminder.png" alt="arrowForReminder" id="triggerImg"></a>
+                        <a href="#" class="p-1"><img src="#" alt=""><img src="img/гр бронь.png" alt="гр бронь"></a>
+                        <a href="#" class="p-1"><img src="img/+ бронь.png" alt="+бронь"></a>
+                        <div class="col-4 m-0">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control shadow-none" placeholder="Поиск">
+                          </div>
+                    </div>
+    
+                    <div class="col-4 d-flex flex-nowrap">
+                        <div class="col-5 text-center bg-light" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom"
+                        data-content="Последние события в системе">
+                            <div class="date">LocalDate</div>
+                            <div class="time">LocalTime</div>
+                        </div>
+                        <div class="col d-flex align-items-center p-0"><a href="#" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom"
+                            data-content="Подсказка 1: для закрытия подсказки кликните по подсказке">
+                            <img src="img/инфо.png" alt="notification" width="25" height="25"></a></div>
+                        <div class="col d-flex align-items-center p-0"><a href="#"><img src="img/square.png" alt="square" width="25" height="25"></a></div>
+                        <div class="col d-flex align-items-center p-0"><a href="#" data-toggle="modal" data-target="#exampleModal"><img src="img/notification.png" alt="инфо" width="40" height="40"></a></div>
+                        <div class="col d-flex align-items-center p-0"><a href="#"><img src="img/aInCircle.png" alt="aInCircle" width="25" height="25"></a></div>
+                    </div>
+                </div>
+            </header>
+    
+            <hr>
+    
+            <main>
+                <div class="row flex-nowrap slider p-2">
+                    <div class="col-3 rounded ">
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="card-title">Бронь</h6>
+                                    <a href="#"><span class="card-text text-primary">959595959</span></a>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5 d-flex flex-column">
+                                            <span>Источник</span>
+                                            <span>Заказчик</span>
+                                            <span>Категория</span>
+                                            <span>Период</span>
+                                            <span>Статус</span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column">
+                                            <span>Booking</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Иванов Иван Иванович</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Люкс 5-ти местный</span>
+                                            <span>15.02-17.02.20</span>
+                                            <span>Оплачено</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 rounded ">
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="card-title d-flex flex-row flex-nowrap">Бронь <span class="ml-2 rounded-pill overBooking">Овербукинг!</span></h6>
+                                    <a href="#"><span class="card-text text-primary">959595959</span></a>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5 d-flex flex-column">
+                                            <span>Источник</span>
+                                            <span>Заказчик</span>
+                                            <span>Категория</span>
+                                            <span>Период</span>
+                                            <span>Статус</span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column">
+                                            <span>Booking</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Иванов Иван Иванович</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Люкс 5-ти местный</span>
+                                            <span>15.02-17.02.20</span>
+                                            <span>Оплачено</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 rounded ">
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="card-title">Бронь</h6>
+                                    <a href="#"><span class="card-text text-primary">959595959</span></a>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5 d-flex flex-column">
+                                            <span>Источник</span>
+                                            <span>Заказчик</span>
+                                            <span>Категория</span>
+                                            <span>Период</span>
+                                            <span>Статус</span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column">
+                                            <span>Booking</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Иванов Иван Иванович</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Люкс 5-ти местный</span>
+                                            <span>15.02-17.02.20</span>
+                                            <span>Оплачено</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 rounded ">
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="card-title">Бронь</h6>
+                                    <a href="#"><span class="card-text text-primary">959595959</span></a>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5 d-flex flex-column">
+                                            <span>Источник</span>
+                                            <span>Заказчик</span>
+                                            <span>Категория</span>
+                                            <span>Период</span>
+                                            <span>Статус</span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column">
+                                            <span>Booking</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Иванов Иван Иванович</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Люкс 5-ти местный</span>
+                                            <span>15.02-17.02.20</span>
+                                            <span>Оплачено</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3">
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="card-title">Бронь</h6>
+                                    <a href="#"><span class="card-text text-primary">959595959</span></a>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5 d-flex flex-column">
+                                            <span>Источник</span>
+                                            <span>Заказчик</span>
+                                            <span>Категория</span>
+                                            <span>Период</span>
+                                            <span>Статус</span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column">
+                                            <span>Booking</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Иванов Иван Иванович</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Люкс 5-ти местный</span>
+                                            <span>15.02-17.02.20</span>
+                                            <span>Оплачено</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3">
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="card-title">Бронь</h6>
+                                    <a href="#"><span class="card-text text-primary">959595959</span></a>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-5 d-flex flex-column">
+                                            <span>Источник</span>
+                                            <span>Заказчик</span>
+                                            <span>Категория</span>
+                                            <span>Период</span>
+                                            <span>Статус</span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column">
+                                            <span>Booking</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Иванов Иван Иванович</span>
+                                            <span class="text-nowrap overflow-hidden text-truncate">Люкс 5-ти местный</span>
+                                            <span>15.02-17.02.20</span>
+                                            <span>Оплачено</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards end --> 
+                <div class="row d-none smallMenu" >
+                    <div class="col-12">
+                        <a href="#"><img src="img/календарь.png" class="ml-3" alt="календарь"></a>
+                        <a href="#"><img src="img/чемодан.png" class="ml-3" alt="чемодан"></a>
+                        <a href="#"><img src="img/отчеты.png" class="ml-3" alt="отчеты"></a>
+                        <a href="#"><img src="img/персонал.png" class="ml-3" alt="персонал"></a>
+                    </div>
+                </div>
+                <hr class="d-none smallMenu">
+                <div class="row"><h3 class="text-info ml-3 mt-2">Заголовок 1</h3></div>
+    
+                <div class="row p-1 m-1">
+                    <div class="col-8 p-3 bg-white">
+                        <h3 class="text-info">Заголовок 2</h3>
+    
+                        <div class="col d-flex flex-nowrap bg-light p-2">
+                            <div class="col-4">Lorem, ipsum.</div>
+                            <div class="col-8">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                        <div class="col d-flex flex-nowrap p-2">
+                            <div class="col-4">Lorem, ipsum.</div>
+                            <div class="col-8">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                        <div class="col d-flex flex-nowrap bg-light p-2">
+                            <div class="col-4">Lorem, ipsum.</div>
+                            <div class="col-8">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                        <div class="col d-flex flex-nowrap p-2">
+                            <div class="col-4">Lorem, ipsum.</div>
+                            <div class="col-8">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                     
+                        <hr>
+    
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-3 d-flex justify-content-between align-items-center">
+                                <a href="#"><img src="img/принтер.png" alt="принтер"></a>
+                                <a href="#"><img src="img/загрузить.png" alt="загрузить"></a>
+                                <a href="#"><img src="img/редактировать.png" alt="редактировать"></a>
+                                <a href="#"><img src="img/+.png" alt="+"></a>
+                            </div>
+                            <div class="col-4 d-flex flex-nowrap justify-content-between">
+                                <input type="button" value="Отмена" class="btn btn-outline-secondary mr-2">
+                                <input type="button" value="Сохранить"class="btn bg-success" style="color: white;">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-info">Напоминания(обуч.)</h5>
+    
+                                <div class="row d-flex align-items-center justify-content-between">
+                                    <div class="col-10">
+                                        <div class="col">Напоминание о чем то важном 1</div>
+                                        <div class="col">Напоминание о чем то важном 2</div>
+                                        <div class="col">Напоминание о чем то важном 3</div>
+                                    </div> 
+                                    <div class="col-2 d-flex flex-column align-items-center">
+                                        <div class="col p-0"><a href="#"><img src="img/arrowForReminder.png" alt="arrowForReminder"></a></div>
+                                        <div class="col p-0 mt-4 mb-4"><a href="#"><img src="img/arrowForReminder.png" alt="arrowForReminder"></a></div>
+                                        <div class="col p-0"><a href="#"><img src="img/arrowForReminder.png" alt="arrowForReminder"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <hr id="foot">
+                <div class="row d-flex align-items-center justify-content-between mb-2">
+                    <div class="col-2 "><span>2020. Majex</span></div>
+                    <div class="col-3 d-flex justify-content-end"><a href="#" class="text-secondary mr-3">Тех поддержка</a><a href="#" class="text-secondary">Обучение</a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script src="scr/script.js"></script>
+</body>
+</html>
